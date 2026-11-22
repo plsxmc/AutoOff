@@ -10,12 +10,14 @@ Windows 本地绿色小工具：**定时关闭指定游戏/程序 · 定时关�
 
 ## 下载
 
-前往 [Releases](https://github.com/xiaokeai654362/AutoOff/releases) 页面下载：
+前往 [Releases](https://github.com/plsxmc/AutoOff/releases) 页面下载：
 
 | 文件 | 说明 |
 |------|------|
-| `AutoOff_Setup_1.0.0.exe` | 安装版：向导安装到程序目录，含开始菜单/桌面快捷方式与卸载器 |
-| `AutoOff.exe` | 绿色版：单文件直接双击运行，配置与日志保存在同目录 `data\` |
+| `AutoOff_Setup_1.0.1.exe` | 安装版：向导安装到程序目录，含开始菜单/桌面快捷方式与卸载器 |
+| `AutoOff.exe` | 绿色版：单文件直接双击运行 |
+
+**数据保存位置**：优先 exe 同目录 `data\`（绿色模式）；若安装到 Program Files 等无写权限目录，自动改用 `%LOCALAPPDATA%\AutoOff\data`（v1.0.1 起）。
 
 ## 快速上手
 
@@ -38,6 +40,7 @@ Windows 本地绿色小工具：**定时关闭指定游戏/程序 · 定时关�
 
 ## 版本
 
+- v1.0.1（2026-11-22）：修复安装到 Program Files 后启动崩溃（数据目录自动回退到 %LOCALAPPDATA%）
 - v1.0.0（2026-11-22）：首个发布版本。定时关进程/关机、点选窗口定向关闭、双模式（目标进程/全部窗口）、执行前提醒可取消、托盘常驻、日志按天分卷并自动清理。
 
 > AI生成
